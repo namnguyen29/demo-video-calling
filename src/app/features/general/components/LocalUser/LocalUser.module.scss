@@ -1,0 +1,18 @@
+.localUserContainer {
+  position: relative;
+  .defaultLocalUserStyle {
+    border-radius: 0.5rem;
+  }
+
+  .localUserInfo {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    align-items: center;
+  }
+
+  .userNameBadge {
+    margin-right: 1rem;
+  }
+}

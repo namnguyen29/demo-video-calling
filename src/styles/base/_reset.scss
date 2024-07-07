@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+ul,
+ol,
+dl,
+dd {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 16px;
+  &:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+body,
+#root {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  color: var(--black-1);
+  line-height: 1.5;
+  font-family: AllianceNo1Regular;
+  overflow-x: hidden;
+  background-color: var(--mantine-color-gray-0);
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: AllianceNo1Bold;
+  color: var(--red-0);
+}
+
+h2 {
+  font-size: 3.125rem;
+  font-family: AllianceNo1Bold;
+  color: var(--red-0);
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: AllianceNo1Bold;
+  color: var(--red-0);
+}
+
+h4 {
+  font-size: 1.5625rem;
+  font-family: AllianceNo1Bold;
+  color: var(--red-0);
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-family: AllianceNo1Bold;
+  color: var(--red-0);
+}
+
+h6 {
+  font-size: 1rem;
+  font-family: AllianceNo1Bold;
+  color: var(--red-0);
+}
