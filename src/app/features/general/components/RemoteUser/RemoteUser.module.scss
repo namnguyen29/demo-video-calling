@@ -1,0 +1,38 @@
+.remoteUserContainer {
+  position: relative;
+  z-index: 1;
+
+  .remoteUserStyle {
+    border-radius: 0.5rem;
+  }
+
+  .remoteUserInfo {
+    position: absolute;
+    display: flex;
+    bottom: 8px;
+    left: 8px;
+    align-items: center;
+  }
+
+  .userNameBadge {
+    margin-right: 1rem;
+  }
+
+  .remoteSetting {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 5;
+
+    .remoteList {
+      list-style-type: none;
+      position: absolute;
+      right: 0;
+      z-index: 5;
+
+      & li {
+        cursor: pointer;
+      }
+    }
+  }
+}

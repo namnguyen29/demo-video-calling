@@ -1,0 +1,23 @@
+.multipleUserLayout {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0px auto;
+  height: calc(100vh - 168px);
+  overflow: auto;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, minmax(220px, 250px));
+
+  @media screen and (max-width: 1400px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
