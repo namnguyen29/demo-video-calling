@@ -25,7 +25,7 @@ export const VideoRoom = () => {
   const { localMicrophoneTrack } = useLocalMicrophoneTrack(microphone, {
     ANS: true,
     AEC: true,
-    AGC: true
+    AGC: false
   });
   const { localCameraTrack } = useLocalCameraTrack(camera, localCameraDefaultSettings);
   const roomDataString = localStorage.getItem(LocalStorageKey.SUBMITTED_DATA);
