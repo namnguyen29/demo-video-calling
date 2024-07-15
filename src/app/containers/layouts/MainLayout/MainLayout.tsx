@@ -2,7 +2,7 @@ import { AppShell, Group, Burger, Image } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Outlet } from 'react-router-dom';
 
-import logo from '@app-assets/owtvn-logo.png';
+import logo from '@app-assets/images/owtvn-logo.png';
 
 export const MainLayout = () => {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure();

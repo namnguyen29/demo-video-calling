@@ -11,7 +11,7 @@ import {
 
 import styles from './RoomControl.module.scss';
 
-type Props = {
+type Props = Readonly<{
   isCameraOpen: boolean;
   isScreenSharing: boolean;
   isMicrophoneOpen: boolean;
@@ -20,7 +20,7 @@ type Props = {
   leaveRoom: () => void;
   shareScreeen: () => void;
   stopShareScreen: () => void;
-};
+}>;
 
 export const RoomControl = ({
   isCameraOpen,

@@ -2,7 +2,7 @@ import { AxiosError, HttpStatusCode } from 'axios';
 
 import { http } from '@app-core/configs';
 
-http.httpInstance.interceptors.response.use(
+http.interceptors.response.use(
   (response) => response,
   (error: AxiosError) => {
     if (error.status === HttpStatusCode.Unauthorized) {

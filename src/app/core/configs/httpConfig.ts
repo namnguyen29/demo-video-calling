@@ -19,4 +19,4 @@ export class HttpConfig {
   }
 }
 
-export const http = new HttpConfig(environment.baseUrl);
+export const http = new HttpConfig(environment.baseUrl).httpInstance;

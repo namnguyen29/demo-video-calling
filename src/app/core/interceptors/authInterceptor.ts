@@ -2,7 +2,7 @@ import { http } from '@app-core/configs';
 
 const accessToken = JSON.parse(localStorage.getItem('accessToken') as string);
 
-http.httpInstance.interceptors.request.use(
+http.interceptors.request.use(
   (config) => {
     if (accessToken) {
       config.headers.Authorization = `Bearer ${accessToken}`;
